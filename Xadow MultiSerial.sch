@@ -1270,8 +1270,8 @@ at 30/07/2012 17:45:58</description>
 <sheets>
 <sheet>
 <plain>
-<text x="191.77" y="11.43" size="1.778" layer="94" ratio="10">Albert Miao</text>
-<text x="224.79" y="5.08" size="1.778" layer="94" ratio="10">v0.1a</text>
+<text x="191.77" y="11.43" size="1.778" layer="94" ratio="10">Tisham Dhar</text>
+<text x="224.79" y="5.08" size="1.778" layer="94" ratio="10">v1.0</text>
 </plain>
 <instances>
 <instance part="J2" gate="G$1" x="33.02" y="143.256" smashed="yes">
