@@ -1588,8 +1588,8 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <part name="U$1" library="moudle" deviceset="SEEEDSTUDIO_SCH_FRAME" device=""/>
 <part name="U1" library="nxpsemi" deviceset="SC16IS752" device=""/>
 <part name="J1" library="template" deviceset="FPC052002-12LT" device="" value="12p 0.5mm bottom contact"/>
-<part name="C1" library="OPL" deviceset="CAP" device="-0603" value="22pF"/>
-<part name="C2" library="OPL" deviceset="CAP" device="-0603" value="33pF"/>
+<part name="C1" library="OPL" deviceset="CAP" device="-0603" value="15pF"/>
+<part name="C2" library="OPL" deviceset="CAP" device="-0603" value="22pF"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="S1" library="switch-copal" deviceset="CHS-02" device="A"/>
 <part name="R1" library="OPL" deviceset="R*" device="-0603" value="10k"/>

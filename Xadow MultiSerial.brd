@@ -697,13 +697,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="NAME" x="8.521" y="15.415" size="0.889" layer="26" ratio="11" rot="MR180"/>
 <attribute name="VALUE" x="10.553" y="22.654" size="0.889" layer="28" ratio="11" rot="MR180"/>
 </element>
-<element name="C1" library="OPL" package="C0603" value="22pF" x="23.241" y="18.669" smashed="yes">
+<element name="C1" library="OPL" package="C0603" value="15pF" x="23.241" y="18.669" smashed="yes">
 <attribute name="NAME" x="25.781" y="18.669" size="0.508" layer="25" ratio="11" rot="R180"/>
-<attribute name="VALUE" x="24.511" y="18.9865" size="0.635" layer="27" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="23.0505" y="19.431" size="0.381" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="C2" library="OPL" package="C0603" value="33pF" x="23.241" y="20.32" smashed="yes">
+<element name="C2" library="OPL" package="C0603" value="22pF" x="23.241" y="20.32" smashed="yes">
 <attribute name="NAME" x="24.765" y="20.701" size="0.508" layer="25" ratio="11"/>
-<attribute name="VALUE" x="22.225" y="20.1295" size="0.635" layer="27" ratio="10"/>
+<attribute name="VALUE" x="23.4315" y="19.685" size="0.381" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="S1" library="switch-copal" package="CHS-02A" value="CHS-02A" x="9.5885" y="19.558" smashed="yes" rot="R270">
 <attribute name="NAME" x="4.7625" y="17.272" size="1.27" layer="25"/>
@@ -1052,13 +1052,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="14.859" y1="17.907" x2="14.859" y2="18.415" width="0.3048" layer="1"/>
 <wire x1="16.51" y1="16.256" x2="14.859" y2="17.907" width="0.3048" layer="1"/>
 <wire x1="19.812" y1="16.256" x2="16.51" y2="16.256" width="0.3048" layer="1"/>
-<wire x1="22.733" y1="17.272" x2="23.622" y2="17.272" width="0.3048" layer="1"/>
 <wire x1="22.479" y1="17.272" x2="22.733" y2="17.272" width="0.3048" layer="16"/>
 <wire x1="22.352" y1="17.399" x2="22.479" y2="17.272" width="0.3048" layer="16"/>
 <wire x1="20.955" y1="17.399" x2="22.352" y2="17.399" width="0.3048" layer="16"/>
 <wire x1="19.812" y1="16.256" x2="20.955" y2="17.399" width="0.3048" layer="16"/>
 <via x="22.733" y="17.272" extent="1-16" drill="0.3048"/>
-<wire x1="23.622" y1="17.272" x2="23.876" y2="17.526" width="0.3048" layer="1"/>
 <wire x1="22.225" y1="17.526" x2="22.225" y2="17.399" width="0.3048" layer="1"/>
 <wire x1="22.352" y1="17.653" x2="22.225" y2="17.526" width="0.3048" layer="1"/>
 <wire x1="22.352" y1="18.669" x2="22.352" y2="17.653" width="0.3048" layer="1"/>
@@ -1066,6 +1064,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="22.352" y1="20.32" x2="22.352" y2="18.796" width="0.3048" layer="1"/>
 <wire x1="22.479" y1="20.32" x2="22.352" y2="20.32" width="0.3048" layer="1"/>
 <wire x1="22.352" y1="18.796" x2="22.479" y2="18.669" width="0.3048" layer="1"/>
+<wire x1="22.86" y1="17.145" x2="24.765" y2="17.145" width="0.3048" layer="1"/>
+<wire x1="22.733" y1="17.272" x2="22.86" y2="17.145" width="0.3048" layer="1"/>
 </signal>
 <signal name="PB1/D15/SCK">
 <contactref element="J2" pad="1"/>
