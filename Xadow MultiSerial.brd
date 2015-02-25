@@ -769,11 +769,11 @@ Source: RS Component / BUORNS</description>
 <attribute name="VALUE" x="16.498" y="-0.429" size="0.889" layer="28" ratio="11" rot="MR0"/>
 </element>
 <element name="5V" library="wirepad" package="1,6/0,8" value="" x="23.495" y="2.54" smashed="yes">
-<attribute name="NAME" x="22.733" y="2.159" size="0.635" layer="25" ratio="10" rot="R90"/>
+<attribute name="NAME" x="21.971" y="1.651" size="0.635" layer="26" ratio="10" rot="MR90"/>
 <attribute name="VALUE" x="23.495" y="3.14" size="0.0254" layer="27"/>
 </element>
 <element name="GND" library="wirepad" package="1,6/0,8" value="" x="23.495" y="18.288" smashed="yes">
-<attribute name="NAME" x="22.606" y="16.764" size="0.635" layer="25" ratio="10"/>
+<attribute name="NAME" x="24.257" y="16.764" size="0.635" layer="26" ratio="10" rot="MR0"/>
 <attribute name="VALUE" x="23.495" y="18.888" size="0.0254" layer="27"/>
 </element>
 <element name="J1" library="OPL Eagle Library" package="MINI-B-SMD" value="MINI-USB-5P-3400020P1" x="14.732" y="17.907" smashed="yes" rot="MR180">
@@ -785,11 +785,11 @@ Source: RS Component / BUORNS</description>
 <attribute name="VALUE" x="12.778" y="3.742" size="0.75" layer="27"/>
 </element>
 <element name="RXB_5" library="wirepad" package="1,6/0,8" value="" x="23.495" y="20.066" smashed="yes">
-<attribute name="NAME" x="24.892" y="18.669" size="0.508" layer="25" ratio="10" rot="R90"/>
+<attribute name="NAME" x="21.844" y="18.415" size="0.635" layer="26" ratio="10" rot="MR90"/>
 <attribute name="VALUE" x="23.495" y="20.666" size="0.0254" layer="27"/>
 </element>
 <element name="TXB_5" library="wirepad" package="1,6/0,8" value="" x="23.495" y="4.445" smashed="yes" rot="R1.8">
-<attribute name="NAME" x="22.0735625" y="5.8735375" size="0.508" layer="25" ratio="10" rot="R270"/>
+<attribute name="NAME" x="22.5815625" y="5.7465375" size="0.635" layer="26" ratio="10" rot="MR270"/>
 <attribute name="VALUE" x="23.476153125" y="5.044703125" size="0.0254" layer="27" rot="R1.8"/>
 </element>
 <element name="U2" library="NXP_By_element14_Batch_1" package="SOT65P210X110-6N" value="BSS138PS" x="17.653" y="18.796" smashed="yes" rot="R90">
