@@ -24,8 +24,8 @@
 <layer number="26" name="bNames" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
@@ -713,11 +713,11 @@ Source: RS Component / BUORNS</description>
 </element>
 <element name="U1" library="nxpsemi" package="TSSOP28" value="SC16IS752" x="14.7955" y="11.684"/>
 <element name="C1" library="OPL" package="C0603" value="15pF" x="11.684" y="6.223" smashed="yes" rot="R270">
-<attribute name="NAME" x="11.684" y="3.683" size="0.508" layer="25" ratio="11" rot="R90"/>
+<attribute name="NAME" x="10.922" y="6.731" size="0.508" layer="25" ratio="11" rot="R90"/>
 <attribute name="VALUE" x="12.446" y="6.4135" size="0.381" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="C2" library="OPL" package="C0603" value="22pF" x="17.145" y="6.35" smashed="yes" rot="R90">
-<attribute name="NAME" x="16.764" y="7.874" size="0.508" layer="25" ratio="11" rot="R90"/>
+<attribute name="NAME" x="18.415" y="6.858" size="0.508" layer="25" ratio="11" rot="R90"/>
 <attribute name="VALUE" x="17.78" y="6.5405" size="0.381" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="S1" library="switch-copal" package="CHS-02A" value="CHS-02A" x="9.5885" y="19.812" smashed="yes" rot="R270">
