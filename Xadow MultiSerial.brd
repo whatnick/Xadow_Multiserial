@@ -20,8 +20,8 @@
 <layer number="22" name="bPlace" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="3" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="3" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -490,6 +490,53 @@ Source: RS Component / BUORNS</description>
 </package>
 </packages>
 </library>
+<library name="adafruit">
+<packages>
+<package name="C0805K">
+<description>&lt;b&gt;Ceramic Chip Capacitor KEMET 0805 Reflow solder&lt;/b&gt;&lt;p&gt;
+Metric Code Size 2012</description>
+<wire x1="-0.925" y1="0.6" x2="0.925" y2="0.6" width="0.1016" layer="51"/>
+<wire x1="0.925" y1="-0.6" x2="-0.925" y2="-0.6" width="0.1016" layer="51"/>
+<wire x1="-2" y1="1" x2="2" y2="1" width="0.05" layer="39"/>
+<wire x1="2" y1="1" x2="2" y2="-1" width="0.05" layer="39"/>
+<wire x1="2" y1="-1" x2="-2" y2="-1" width="0.05" layer="39"/>
+<wire x1="-2" y1="-1" x2="-2" y2="1" width="0.05" layer="39"/>
+<smd name="1" x="-1" y="0" dx="1.1" dy="1.4" layer="1"/>
+<smd name="2" x="1" y="0" dx="1.1" dy="1.4" layer="1"/>
+<text x="-1" y="0.875" size="1.016" layer="25">&gt;NAME</text>
+<text x="-1" y="-1.9" size="1.016" layer="27">&gt;VALUE</text>
+<rectangle x1="-1" y1="-0.65" x2="-0.5" y2="0.65" layer="51"/>
+<rectangle x1="0.5" y1="-0.65" x2="1" y2="0.65" layer="51"/>
+</package>
+<package name="SOT23-5L">
+<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;&lt;p&gt;
+package type OT</description>
+<wire x1="1.422" y1="0.81" x2="1.422" y2="-0.81" width="0.1524" layer="21"/>
+<wire x1="1.422" y1="-0.81" x2="-1.422" y2="-0.81" width="0.1524" layer="51"/>
+<wire x1="-1.422" y1="-0.81" x2="-1.422" y2="0.81" width="0.1524" layer="21"/>
+<wire x1="-1.422" y1="0.81" x2="1.422" y2="0.81" width="0.1524" layer="51"/>
+<wire x1="-0.522" y1="0.81" x2="0.522" y2="0.81" width="0.1524" layer="21"/>
+<wire x1="-0.428" y1="-0.81" x2="-0.522" y2="-0.81" width="0.1524" layer="21"/>
+<wire x1="0.522" y1="-0.81" x2="0.428" y2="-0.81" width="0.1524" layer="21"/>
+<wire x1="-1.328" y1="-0.81" x2="-1.422" y2="-0.81" width="0.1524" layer="21"/>
+<wire x1="1.422" y1="-0.81" x2="1.328" y2="-0.81" width="0.1524" layer="21"/>
+<wire x1="1.328" y1="0.81" x2="1.422" y2="0.81" width="0.1524" layer="21"/>
+<wire x1="-1.422" y1="0.81" x2="-1.328" y2="0.81" width="0.1524" layer="21"/>
+<smd name="1" x="-0.95" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="2" x="0" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="3" x="0.95" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="4" x="0.95" y="1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="5" x="-0.95" y="1.3" dx="0.55" dy="1.2" layer="1"/>
+<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-3.429" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.2" y1="-1.5" x2="-0.7" y2="-0.85" layer="51"/>
+<rectangle x1="-0.25" y1="-1.5" x2="0.25" y2="-0.85" layer="51"/>
+<rectangle x1="0.7" y1="-1.5" x2="1.2" y2="-0.85" layer="51"/>
+<rectangle x1="0.7" y1="0.85" x2="1.2" y2="1.5" layer="51"/>
+<rectangle x1="-1.2" y1="0.85" x2="-0.7" y2="1.5" layer="51"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -741,9 +788,12 @@ Source: RS Component / BUORNS</description>
 <attribute name="VALUE" x="22.098" y="15.3416" size="2.0828" layer="27" ratio="10" rot="SR90"/>
 </element>
 <element name="R7" library="Discrete" package="1206-8-3.3X2.4" value="10K" x="20.701" y="19.05" rot="R180"/>
+<element name="C3" library="adafruit" package="C0805K" value="10uF" x="13.335" y="19.05" rot="R90"/>
+<element name="C4" library="adafruit" package="C0805K" value="10uF" x="7.62" y="19.05" rot="R90"/>
+<element name="IC2" library="adafruit" package="SOT23-5L" value="LP298XS" x="10.541" y="19.05" rot="R90"/>
 </elements>
 <signals>
-<signal name="3V3" class="2">
+<signal name="+3V3" class="2">
 <contactref element="J2" pad="5"/>
 <contactref element="J2" pad="8"/>
 <contactref element="J3" pad="8"/>
@@ -879,6 +929,36 @@ Source: RS Component / BUORNS</description>
 <wire x1="15.367" y1="5.969" x2="15.367" y2="6.731" width="0.3048" layer="16"/>
 <wire x1="13.589" y1="7.366" x2="13.4874" y2="7.2644" width="0.3048" layer="16"/>
 <wire x1="15.367" y1="5.969" x2="15.355" y2="5.906" width="0.3048" layer="16"/>
+<contactref element="C3" pad="1"/>
+<contactref element="C4" pad="1"/>
+<contactref element="IC2" pad="5"/>
+<wire x1="8.382" y1="18.1102" x2="9.2202" y2="18.1102" width="0.3048" layer="1"/>
+<wire x1="8.3312" y1="18.0594" x2="8.382" y2="18.1102" width="0.3048" layer="1"/>
+<wire x1="7.62" y1="18.0594" x2="8.3312" y2="18.0594" width="0.3048" layer="1"/>
+<wire x1="9.2202" y1="18.1102" x2="9.241" y2="18.1" width="0.3048" layer="1"/>
+<wire x1="7.62" y1="18.0594" x2="7.62" y2="18.05" width="0.3048" layer="1"/>
+<wire x1="12.8016" y1="18.0594" x2="13.335" y2="18.0594" width="0.3048" layer="1"/>
+<wire x1="12.8016" y1="17.4752" x2="12.8016" y2="18.0594" width="0.3048" layer="1"/>
+<wire x1="12.7762" y1="17.4498" x2="12.8016" y2="17.4752" width="0.3048" layer="1"/>
+<wire x1="10.5918" y1="17.4498" x2="12.7762" y2="17.4498" width="0.3048" layer="1"/>
+<wire x1="9.9314" y1="18.1102" x2="10.5918" y2="17.4498" width="0.3048" layer="1"/>
+<wire x1="9.398" y1="18.1102" x2="9.9314" y2="18.1102" width="0.3048" layer="1"/>
+<wire x1="13.335" y1="18.0594" x2="13.335" y2="18.05" width="0.3048" layer="1"/>
+<wire x1="9.398" y1="18.1102" x2="9.241" y2="18.1" width="0.3048" layer="1"/>
+<wire x1="7.1628" y1="18.0594" x2="7.493" y2="18.0594" width="0.3048" layer="1"/>
+<wire x1="7.1628" y1="17.3228" x2="7.1628" y2="18.0594" width="0.3048" layer="1"/>
+<wire x1="7.3406" y1="17.145" x2="7.1628" y2="17.3228" width="0.3048" layer="1"/>
+<wire x1="7.3406" y1="15.9258" x2="7.3406" y2="17.145" width="0.3048" layer="1"/>
+<wire x1="4.5974" y1="13.1826" x2="7.3406" y2="15.9258" width="0.3048" layer="1"/>
+<wire x1="4.5974" y1="12.9794" x2="4.5974" y2="13.1826" width="0.3048" layer="1"/>
+<wire x1="5.588" y1="11.9888" x2="4.5974" y2="12.9794" width="0.3048" layer="16"/>
+<wire x1="6.223" y1="11.9888" x2="5.588" y2="11.9888" width="0.3048" layer="1"/>
+<wire x1="6.2992" y1="12.065" x2="6.223" y2="11.9888" width="0.3048" layer="1"/>
+<wire x1="6.8326" y1="12.065" x2="6.2992" y2="12.065" width="0.3048" layer="1"/>
+<wire x1="7.493" y1="18.0594" x2="7.62" y2="18.05" width="0.3048" layer="1"/>
+<wire x1="6.8326" y1="12.065" x2="6.9855" y2="12.053" width="0.3048" layer="1"/>
+<via x="4.5974" y="12.9794" extent="1-16" drill="0.3048"/>
+<via x="5.588" y="11.9888" extent="1-16" drill="0.3048"/>
 </signal>
 <signal name="GND">
 <contactref element="J2" pad="6"/>
@@ -944,7 +1024,6 @@ Source: RS Component / BUORNS</description>
 <wire x1="10.16" y1="14.097" x2="8.8265" y2="15.4305" width="0.3048" layer="16"/>
 <wire x1="8.8265" y1="15.4305" x2="7.62" y2="16.637" width="0.3048" layer="16"/>
 <wire x1="10.16" y1="14.097" x2="10.232" y2="14.01" width="0.3048" layer="16"/>
-<wire x1="6.477" y1="16.637" x2="6.223" y2="16.637" width="0.3048" layer="16"/>
 <wire x1="6.731" y1="16.891" x2="6.477" y2="16.637" width="0.3048" layer="16"/>
 <wire x1="6.223" y1="16.383" x2="6.731" y2="16.891" width="0.3048" layer="1"/>
 <wire x1="4.7625" y1="16.383" x2="6.223" y2="16.383" width="0.3048" layer="1"/>
@@ -960,8 +1039,6 @@ Source: RS Component / BUORNS</description>
 <wire x1="5.207" y1="6.223" x2="6.604" y2="4.826" width="0.3048" layer="1"/>
 <wire x1="4.7625" y1="6.223" x2="5.207" y2="6.223" width="0.3048" layer="1"/>
 <via x="6.604" y="4.826" extent="1-16" drill="0.3048"/>
-<wire x1="6.858" y1="18.669" x2="6.858" y2="18.719796875" width="0.1524" layer="16"/>
-<wire x1="5.334" y1="17.526" x2="5.2901125" y2="17.569890625" width="0.1524" layer="16"/>
 <wire x1="16.9418" y1="5.715" x2="17.145" y2="5.588" width="0.1524" layer="1"/>
 <wire x1="16.9418" y1="5.715" x2="17.049728125" y2="5.68325" width="0.1524" layer="1"/>
 <wire x1="7.239" y1="5.588" x2="6.604" y2="6.223" width="0.3048" layer="1"/>
@@ -973,12 +1050,9 @@ Source: RS Component / BUORNS</description>
 <via x="2.667" y="15.875" extent="1-16" drill="0.3048"/>
 <wire x1="9.779" y1="16.383" x2="9.906" y2="16.383" width="0.3048" layer="1"/>
 <wire x1="8.8265" y1="15.4305" x2="9.779" y2="16.383" width="0.3048" layer="16"/>
-<wire x1="9.906" y1="17.653" x2="9.906" y2="16.383" width="0.3048" layer="1"/>
-<wire x1="8.763" y1="18.796" x2="9.906" y2="17.653" width="0.3048" layer="1"/>
 <via x="9.779" y="16.383" extent="1-16" drill="0.3048"/>
-<via x="8.763" y="18.796" extent="1-16" drill="0.3048"/>
 <via x="14.605" y="20.701" extent="1-16" drill="0.3048"/>
-<via x="13.208" y="17.399" extent="1-16" drill="0.3048"/>
+<via x="13.589" y="17.018" extent="1-16" drill="0.3048"/>
 <wire x1="10.0838" y1="5.6896" x2="10.16" y2="5.715" width="0.1524" layer="1"/>
 <wire x1="9.4234" y1="3.6322" x2="9.525" y2="3.683" width="0.1524" layer="16"/>
 <wire x1="9.4234" y1="3.6322" x2="9.4234" y2="3.5559875" width="0.1524" layer="16"/>
@@ -1045,6 +1119,9 @@ Source: RS Component / BUORNS</description>
 <wire x1="15.748" y1="8.763" x2="15.748" y2="7.874" width="0.3048" layer="1"/>
 <wire x1="15.748" y1="8.763" x2="15.7705" y2="8.784" width="0.3048" layer="1"/>
 <via x="15.494" y="7.62" extent="1-16" drill="0.3048"/>
+<contactref element="C3" pad="2"/>
+<contactref element="C4" pad="2"/>
+<contactref element="IC2" pad="2"/>
 </signal>
 <signal name="PB1/D15/SCK">
 <contactref element="J2" pad="1"/>
@@ -1469,7 +1546,7 @@ Source: RS Component / BUORNS</description>
 <wire x1="19.939" y1="3.81" x2="19.939" y2="2.2352" width="0.1524" layer="1"/>
 <wire x1="19.9898" y1="2.2352" x2="19.8755" y2="2.3495" width="0.1524" layer="1"/>
 </signal>
-<signal name="5V">
+<signal name="+5V">
 <contactref element="R7" pad="1"/>
 <contactref element="R7" pad="2"/>
 <contactref element="J1" pad="1"/>
@@ -1520,6 +1597,27 @@ Source: RS Component / BUORNS</description>
 <via x="25.0952" y="4.1402" extent="1-16" drill="0.3048"/>
 <via x="23.9522" y="13.97" extent="1-16" drill="0.3048"/>
 <via x="22.3012" y="15.9258" extent="1-16" drill="0.3048"/>
+<contactref element="IC2" pad="1"/>
+<contactref element="IC2" pad="3"/>
+<wire x1="11.2014" y1="18.1102" x2="11.8364" y2="18.1102" width="0.1524" layer="1"/>
+<wire x1="10.9474" y1="18.3642" x2="11.2014" y2="18.1102" width="0.1524" layer="1"/>
+<wire x1="10.9474" y1="19.7866" x2="10.9474" y2="18.3642" width="0.1524" layer="1"/>
+<wire x1="11.1506" y1="19.9898" x2="10.9474" y2="19.7866" width="0.1524" layer="1"/>
+<wire x1="11.8364" y1="19.9898" x2="11.1506" y2="19.9898" width="0.1524" layer="1"/>
+<wire x1="11.8364" y1="18.1102" x2="11.841" y2="18.1" width="0.1524" layer="1"/>
+<wire x1="11.8364" y1="19.9898" x2="11.841" y2="20" width="0.1524" layer="1"/>
+<wire x1="12.2936" y1="19.9898" x2="11.9126" y2="19.9898" width="0.1524" layer="1"/>
+<wire x1="12.2936" y1="20.6248" x2="12.2936" y2="19.9898" width="0.1524" layer="1"/>
+<wire x1="12.1666" y1="20.7518" x2="12.2936" y2="20.6248" width="0.1524" layer="1"/>
+<wire x1="13.8684" y1="19.05" x2="12.1666" y2="20.7518" width="0.1524" layer="16"/>
+<wire x1="14.2494" y1="19.05" x2="13.8684" y2="19.05" width="0.1524" layer="16"/>
+<wire x1="14.5288" y1="19.05" x2="14.2494" y2="19.05" width="0.1524" layer="1"/>
+<wire x1="16.4592" y1="20.9804" x2="14.5288" y2="19.05" width="0.1524" layer="1"/>
+<wire x1="20.6248" y1="20.9804" x2="16.4592" y2="20.9804" width="0.1524" layer="1"/>
+<wire x1="20.955" y1="20.6502" x2="20.6248" y2="20.9804" width="0.1524" layer="1"/>
+<wire x1="11.9126" y1="19.9898" x2="11.841" y2="20" width="0.1524" layer="1"/>
+<via x="12.1666" y="20.7518" extent="1-16" drill="0.3048"/>
+<via x="14.2494" y="19.05" extent="1-16" drill="0.3048"/>
 </signal>
 <signal name="RXB_5">
 <contactref element="U2" pad="6"/>
